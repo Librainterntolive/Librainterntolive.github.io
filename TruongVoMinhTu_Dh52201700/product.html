@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlyFood Clone - Tú Dev</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="image/Logo.png">
+  <script src="btn_slide.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.dropdown-content a').forEach(function(link) {
+        link.setAttribute('href', 'product.html');
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- Header -->
+<header class="top-bar">
+  <div class="header-wrapper">
+    <!-- Cột logo + menu -->
+    <div class="logo-menu">
+      <a href="index.html"><img src="image/Logo.png" alt="FlyFood Logo" class="logo"></a> 
+      <button class="menu-btn">☰</button>
+    </div>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search-box">
+      <input type="text" placeholder="Tìm kiếm...">
+      <button class="search-icon">🔍</button>
+    </div>
+
+    <!-- Icon giỏ hàng, yêu thích, tài khoản -->
+    <div class="header-icons">
+      <span><a href="#"><i class="cart-icon">🛒</i></a></span>
+      <span><a href="#"><i class="user-icon">👤</i></a></span>
+    </div>
+  </div>
+</header>
+
+  <!-- Navigation -->
+<nav class="nav-links">
+  <div class="nav-container">
+    <a href="index.html" class="active">Trang chủ</a>
+    <div class="separator"></div>
+    <a href="info.html">Về Flyfood</a>
+    <div class="separator"></div>
+    <div class="dropdown">
+      <a href="#">Menu ▼</a>
+     <div class="dropdown-content">
+        <a href="product.html">Món được mua nhiều</a>
+        <a href="product.html">Các Món Gà</a>
+        <a href="product.html">Các Món Bò - Dê - Heo</a>
+        <a href="product.html">Các Món Khai Vị</a>
+        <a href="product.html">Các Món Súp - Cơm</a>
+        <a href="product.html">Các Món Lẩu</a>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <a href="Labthuchanh.html"><span class="dot"></span>Lab Thực Hành</a>
+  
+    <div class="separator"></div>
+    <a href="blog.html">Tin tức</a>
+  </div>
+</nav>
+<main>
+  <div class="product-detail-container">
+    <div class="product-detail-image">
+      <img src="/image/combo/combo-01.jpg" alt="Combo 01" />
+    </div>
+    <div class="product-detail-info">
+      <h1 class="product-title">COMBO 01</h1>
+      <div class="product-subtitle highlight">COMBO FLYFOOD 6-8 NGƯỜI DÙNG <span style="color:#4caf50;">💚</span></div>
+      <div class="product-price">1.470.000 <span class="currency">đ</span></div>
+      <div class="product-quantity">
+        <button class="qty-btn" onclick="decreaseQty()">-</button>
+        <input type="text" value="1" id="qty-input" readonly>
+        <button class="qty-btn" onclick="increaseQty()">+</button>
+      </div>
+      <div class="product-actions">
+        <button class="add-to-cart"><span>🛒</span> THÊM VÀO GIỎ HÀNG</button>
+        <button class="buy-now"><span>⚡</span> MUA NGAY</button>
+      </div>
+      <div class="product-sku">SKU: <span>N/A</span></div>
+    </div>
+  </div>
+
+  <!-- Banner sản phẩm nổi bật -->
+   <p style="text-align: center; color: tomato;">----------------------------------------------------------------------------------Mô tả----------------------------------------------------------------------------------------</p>
+  <div class="product-banner">
+    <img src="/image/combo/combo-01.jpg" alt="Combo 08 (6-7 người)">
+  </div>
+
+  <!-- Mô tả sản phẩm -->
+  <div class="product-description">
+    <h3>Hộp giữ nhiệt FLYFOOD:</h3>
+    <p>
+      Làm bằng giấy Kraft thực phẩm, các Hộp Món của FLYFOOD đóng gói chắc chắn và thẩm mỹ, an toàn giữ được độ nóng và vị tươi ngon cho món ăn.<br>
+      Hộp giữ nhiệt giúp món ăn luôn nóng hổi, đảm bảo vệ sinh, thân thiện môi trường, dễ dàng mang đi và sử dụng.<br>
+      <b>Lưu ý:</b> Giá hiển thị trên đơn hàng là giá trọn vẹn combo, có thể đặt lẻ từng món.
+    </p>
+    <img src="/image/icon-mxh/hop-flyfood.jpg" alt="Hộp giữ nhiệt Flyfood" class="product-box-img">
+  </div>
+</main>
+  
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      
+      <!-- Cột 1: Thông tin liên hệ -->
+      <div class="footer-col">
+        <h4>THÔNG TIN LIÊN HỆ</h4>
+        <p><strong>CÔNG TY CỔ PHẦN THỨC ĂN BAY</strong></p>
+        <p>GPKD: 0314525625</p>
+        <p>Địa chỉ: 7/3 Hồ Biểu Chánh, P.11, Q. Phú Nhuận, TP.HCM</p>
+        <p>Điện thoại: (028) 39 911 911</p>
+        <p>Email: info@flyfood.vn</p>
+        <p>Website: https://flyfood.vn</p>
+      </div>
+
+      <!-- Cột 2: Giới thiệu -->
+      <div class="footer-col">
+        <h4>GIỚI THIỆU</h4>
+        <ul>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 3: Chính sách -->
+      <div class="footer-col">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Quy định chung</a></li>
+          <li><a href="#">Thanh toán</a></li>
+          <li><a href="#">Vận chuyển</a></li>
+          <li><a href="#">Đổi trả</a></li>
+          <li><a href="#">Bảo mật</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 4: Hỗ trợ -->
+      <div class="footer-col">
+        <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+        <ul>
+          <li><a href="#">Câu hỏi thường gặp</a></li>
+          <li><a href="#">Hướng dẫn đặt hàng</a></li>
+        </ul>
+        <form class="newsletter">
+          <input type="email" placeholder="Email của bạn...">
+          <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="floating-contact">
+  <a href="tel:02839911911" target="_blank" class="icon-phone" title="Gọi điện">
+    <img src="/image/icon-mxh/call.svg" alt="Gọi điện">
+  </a>
+  <a href="https://zalo.me/02839911911" target="_blank" class="icon-zalo" title="Zalo">
+    <img src="/image/icon-mxh/zalo.svg" alt="Zalo">
+  </a>
+  <a href="https://m.me/flyfood.vn" target="_blank" class="icon-messenger" title="Messenger">
+    <img src="/image/icon-mxh/messenger.svg" alt="Messenger">
+  </a>
+</div>
+</body>
+</html>

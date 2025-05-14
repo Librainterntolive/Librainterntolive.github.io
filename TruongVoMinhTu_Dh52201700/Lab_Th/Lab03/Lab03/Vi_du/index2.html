@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BookStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@600&family=Kanit&family=Lora:wght@500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="path/to/fork-awesome/css/fork-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <div id="container">
+
+        <form name="frmdangkithanhvien" action="/xlThem.php" method="post" enctype="multipart/form-data">
+            <table border="0" width="100%">
+            <tr>
+            <td colspan="2" align="center"><em> THÊM SẢN PHẨM MỚI</em></td></tr>
+            
+            <tr><td>Mã sản phẩm</td>
+           	<td><input type="text" name="nmProName" size="50"/></td>
+            </tr>
+            <tr><td>Tên Sản phẩm</td>
+           	<td><input type="text" name="nmProImg"  /></td>
+            </tr>
+             <tr><td> Hình Ảnh</td>
+                <td> <input type="file" src="" alt="" name="nmCat"></td>
+            </tr>
+            <tr><td> Hãng Sản Xuất</td>
+               <td>
+                <select name="combobox" id="">
+                    <option value="">Thiên Long 1</option>
+                    <option value="">Thiên Long 2</option>
+                    <option value="">Thiên Long 3</option>
+                </select>
+               </td> 
+            </tr>
+            <tr><td> Kích thước </td>
+            <td> W:<input type="text" name="nmMan" id=""> H:
+            <input type="text" name="nmFields[]" id=""> mm </td>
+            </tr>
+            <tr><td>Số trang</td>
+              <td><input type="text" name="nmEmailAdd" size="50" />trang</td>
+            </tr>
+            <tr><td>Tác Giả</td>	
+              <td><input type="text" name="nmAddress" size="50"/></td>
+            </tr>
+         
+            <tr><td>Giá</td>
+           	<td>
+                <input type="text" name="nmCellphone" size="50"/>
+                Màu:<input type="color" name="nmColor" id="">
+            </td>
+            <tr><td>Xuất Xứ</td>
+                <td>
+                 <input type="text" name="nmCellphone" size="50"/>
+             </td>
+             <tr>   
+                
+                    <td>
+                     Bạn đang quan tâm <br> đến sản phẩm nào?
+                    </td>
+                    <td>
+
+                        <table>
+                           <tr>
+                               <td><input type="checkbox" name="nmCheckbox" value="Văn Học" >Văn Học <br></td>
+                               <td><input type="checkbox" name="nmCheckbox" value="Văn Học" >Kinh Tế <br></td>
+                           </tr>
+                           <tr>
+                               <td><input type="checkbox" name="nmCheckbox" value="Văn Học" >Tâm Lí <br></td>
+                               <td><input type="checkbox" name="nmCheckbox" value="Văn Học" >Thiếu Nhi <br></td>
+                           </tr>
+                           <tr>
+                               <td><input type="checkbox" name="nmCheckbox" value="Văn Học" >Giáo Khoa <br></td>
+                               <td><input type="checkbox" name="nmCheckbox" value="Văn Học" >Ngoại Ngữ <br></td>
+                           </tr>                     
+                           </table>
+                    </td>
+                     <tr>
+                        <td>
+                            Mô tả chi tiết
+                        </td>
+                        <td >
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </td>
+                     </tr>
+                     
+          
+             </tr> 
+             <tr>
+                <td colspan="2" align="center"><br/><input type="submit" name="nmSubmit" value="Thêm" /> 
+                  <input type="reset" name="nmReset" value="Xóa" /> </td>
+              </tr>
+         
+           
+             
+             
+           </table> 
+           
+            </form>
+    </div>
+    
+</body>
+
+</html>

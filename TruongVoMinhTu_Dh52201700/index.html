@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlyFood Clone - Tú Dev</title>
+ <link rel="icon" type="image/png" href="image/Logo.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="btn_slide.js" defer></script>
+</head>
+<body>
+  <!-- Header -->
+<header class="top-bar">
+  <div class="header-wrapper">
+    <!-- Cột logo + menu -->
+    <div class="logo-menu">
+     <a href="index.html"><img src="image/Logo.png" alt="FlyFood Logo" class="logo"></a> 
+      <button class="menu-btn">☰</button>
+    </div>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search-box">
+      <input type="text" placeholder="Tìm kiếm...">
+      <button class="search-icon">🔍</button>
+    </div>
+
+    <!-- Icon giỏ hàng, yêu thích, tài khoản -->
+    <div class="header-icons">
+      <span><a href="#"><i class="cart-icon">🛒</i></a></span>
+      <span><a href="#"><i class="user-icon">👤</i></a></span>
+    </div>
+  </div>
+</header>
+
+  <!-- Navigation -->
+<nav class="nav-links">
+  <div class="nav-container">
+    <a href="index.html" class="active">Trang chủ</a>
+    <div class="separator"></div>
+    <a href="info.html">Về Flyfood</a>
+    <div class="separator"></div>
+    <div class="dropdown">
+      <a href="#">Menu ▼</a>
+     <div class="dropdown-content">
+        <a href="product.html">Món được mua nhiều</a>
+        <a href="product.html">Các Món Gà</a>
+        <a href="product.html">Các Món Bò - Dê - Heo</a>
+        <a href="product.html">Các Món Khai Vị</a>
+        <a href="product.html">Các Món Súp - Cơm</a>
+        <a href="product.html">Các Món Lẩu</a>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <a href="Labthuchanh.html"><span class="dot"></span>Lab Thực Hành</a>
+  
+    <div class="separator"></div>
+    <a href="blog.html">Tin tức</a>
+  </div>
+</nav>
+
+  <!-- Main -->
+  <main>
+    <div class="main-content">
+      <img class="banner-header" src="image/banner-header.jpg" alt="Banner">
+    </div>
+
+    <!-- COMBO 6-8 Người -->
+    <section class="combo-section">
+      <h2>⭐ COMBO FLYFOOD 6-8 NGƯỜI DÙNG</h2>
+      <div class="combo-wrapper">
+        <button class="combo-scroll-btn left">←</button>
+        <div class="combo-list">
+          <div class="combo-card">
+            <a href=""><img src="/image/combo/combo-01.jpg" alt="Combo 01"></a>
+            <div class="combo-info">
+              <h3>COMBO 01</h3>
+              <p>1.470.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/combo/combo-02.jpg" alt="Combo 02"></a> 
+            <div class="combo-info">
+              <h3>COMBO 02</h3>
+              <p>1.270.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/combo/combo-03.jpg" alt="Combo 03"></a> 
+            <div class="combo-info">
+              <h3>COMBO 03</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+            <div class="combo-card">
+           <a href=""><img src="/image/combo/combo-04.jpg" alt="Combo 04"></a> 
+            <div class="combo-info">
+              <h3>COMBO 04</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/combo/combo-05.jpg" alt="Combo 05"></a> 
+            <div class="combo-info">
+              <h3>COMBO 05</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+            <a href=""><img src="/image/combo/combo-06.jpg" alt="Combo 06"></a>
+            <div class="combo-info">
+              <h3>COMBO 06</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/combo/combo-07.jpg" alt="Combo 07"></a> 
+            <div class="combo-info">
+              <h3>COMBO 07</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/combo/combo-08.jpg" alt="Combo 08"></a> 
+            <div class="combo-info">
+              <h3>COMBO 08</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/combo/combo-09.jpg" alt="Combo 09"></a> 
+            <div class="combo-info">
+              <h3>COMBO 09</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+             <div class="combo-card">
+           <a href=""><img src="/image/combo/combo-10.jpg" alt="Combo 10"></a> 
+            <div class="combo-info">
+              <h3>COMBO 10</h3>
+              <p>1.470.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <button class="combo-scroll-btn right">→</button>
+      </div>
+    </section>
+    <!-- Món ăn nổi bật -->
+     <section class="service-highlight">
+        <div class="service-box">
+            <div class="icon">🚴‍♂️</div>
+            <h3>60 phút - Giao ngay tận nơi</h3>
+            <p>các quận, huyện khu vực TP. Hồ Chí Minh</p>
+        </div>
+        <div class="service-box">
+            <div class="icon">📦</div>
+            <h3>Một món cũng giao</h3>
+            <p>100++ món Việt Nam chín chu giao tận tay</p>
+        </div>
+        <div class="service-box">
+            <div class="icon">🔁</div>
+            <h3>Chính sách 1 đổi 1</h3>
+            <p>nếu không hài lòng về chất lượng sản phẩm</p>
+        </div>
+        <div class="service-box">
+            <div class="icon">🧺</div>
+            <h3>Một bàn cũng nhận</h3>
+            <p>Giao món, dụng cụ, phục vụ, thu dọn, vệ sinh</p>
+        </div>
+    </section>
+    <!-- Món được mua nhiều-->
+         <section class="combo-section">
+      <h2>⭐ MÓN ĐƯỢC MUA NHIỀU </h2>
+      <div class="combo-wrapper">
+        <button class="combo-scroll-btn left">←</button>
+        <div class="combo-list">
+          <div class="combo-card">
+            <a href=""><img src="/image/uathich/uathich-1.jpg" alt="Combo 01"></a>
+            <div class="combo-info">
+              <h3>Gỏi bòbò</h3>
+              <p>1.470.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/uathich/uathich-2.jpg" alt="Combo 02"></a> 
+            <div class="combo-info">
+              <h3>Heo quay bắc kinh</h3>
+              <p>1.270.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/uathich/uathich-3.jpg" alt="Combo 03"></a> 
+            <div class="combo-info">
+              <h3>Chả giò tam hoa</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+            <div class="combo-card">
+           <a href=""><img src="/image/uathich/uathich-3.jpg" alt="Combo 04"></a> 
+            <div class="combo-info">
+              <h3>Chả giò tam hoa</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/uathich/uathich4.jpg" alt="Combo 05"></a> 
+            <div class="combo-info">
+              <h3>Lẩu Thái  </h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <button class="combo-scroll-btn right">→</button>
+      </div>
+    </section>
+    <!-- CÁC MÓN GÀ -->
+        <section class="combo-section">
+      <h2>⭐ CÁC MÓN GÀ </h2>
+      <div class="combo-wrapper">
+        <button class="combo-scroll-btn left">←</button>
+        <div class="combo-list">
+          <div class="combo-card">
+            <a href=""><img src="/image/Ga/ga-1.jpg" alt="Combo 01"></a>
+            <div class="combo-info">
+              <h3>Gà hấp xôi</h3>
+              <p>1.470.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/Ga/ga-2.jpg" alt="Combo 02"></a> 
+            <div class="combo-info">
+              <h3>Gà nướng hoa tiêu</h3>
+              <p>1.270.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/Ga/ga-3.jpg" alt="Combo 03"></a> 
+            <div class="combo-info">
+              <h3>Gà bó xôi</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+            <div class="combo-card">
+           <a href=""><img src="/image/Ga/ga-4.jpg" alt="Combo 04"></a> 
+            <div class="combo-info">
+              <h3>MMẹt gà</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/Ga/ga-3.jpg" alt="Combo 05"></a> 
+            <div class="combo-info">
+              <h3>Gà bó xôi</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+            <a href=""><img src="/image/Ga/ga-1.jpg" alt="Combo 06"></a>
+            <div class="combo-info">
+              <h3>Gà hấp</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="combo-scroll-btn right">→</button>
+      </div>
+    </section>
+    <div>
+      <img class="banner-header" src="/image/banner-middle.jpg" alt="">
+    </div>
+    <!-- CÁC MÓN LẨU -->
+          <section class="combo-section">
+      <h2>⭐ CÁC MÓN LẨU </h2>
+      <div class="combo-wrapper">
+        <button class="combo-scroll-btn left">←</button>
+        <div class="combo-list">
+          <div class="combo-card">
+            <a href=""><img src="/image/lau/lau1.jpg" alt="Combo 01"></a>
+            <div class="combo-info">
+              <h3>Bao tử hầm tiêu xanh </h3>
+              <p>1.470.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/lau/lau2.jpg" alt="Combo 02"></a> 
+            <div class="combo-info">
+              <h3> Lẩu mắm hải sản </h3>
+              <p>1.270.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/lau/lau3.jpg" alt="Combo 03"></a> 
+            <div class="combo-info">
+              <h3>Lẩu nhúng mẻ  </h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+            <div class="combo-card">
+           <a href=""><img src="/image/lau/lau4.jpg" alt="Combo 04"></a> 
+            <div class="combo-info">
+              <h3>Lẩu riêu cua bắp bò</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/lau/lau5.jpg" alt="Combo 05"></a> 
+            <div class="combo-info">
+              <h3>Lẩu riêu cua hải sản</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+            <a href=""><img src="/image/lau/lau6.jpg" alt="Combo 06"></a>
+            <div class="combo-info">
+              <h3>Lẩu chua cay thập cẩm </h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/lau/lau7.jpg" alt="Combo 07"></a> 
+            <div class="combo-info">
+              <h3>Lẩu cá bớp măng chuua</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/lau/lau8.png" alt="Combo 08"></a> 
+            <div class="combo-info">
+              <h3>Lẩu cá lăng măng chuachua</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/lau/lau9.jpg" alt="Combo 09"></a> 
+            <div class="combo-info">
+              <h3>Lẩu cá tầm măng chua</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <button class="combo-scroll-btn right">→</button>
+      </div>
+    </section>
+    <!-- CÁC MÓN BÒ - DÊ - HEO -->
+          <section class="combo-section">
+      <h2>⭐ CÁC MÓN BÒ - DÊ- HEO  </h2>
+      <div class="combo-wrapper">
+        <button class="combo-scroll-btn left">←</button>
+        <div class="combo-list">
+          <div class="combo-card">
+            <a href=""><img src="/image/bo-de-heo/bo1.jpg" alt="Combo 01"></a>
+            <div class="combo-info">
+              <h3>Bò hầm</h3>
+              <p>1.470.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/bo-de-heo/bo2.jpg" alt="Combo 02"></a> 
+            <div class="combo-info">
+              <h3>Cà ri bò</h3>
+              <p>1.270.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/bo-de-heo/de1.jpg" alt="Combo 03"></a> 
+            <div class="combo-info">
+              <h3>Cà ri dê</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+            <div class="combo-card">
+           <a href=""><img src="/image/bo-de-heo/bo-de-heo1.jpg" alt="Combo 04"></a> 
+            <div class="combo-info">
+              <h3>Heo quay bắc kinh</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/bo-de-heo/heo2.jpg" alt="Combo 05"></a> 
+            <div class="combo-info">
+              <h3>Mẹt heo quay giòngiòn</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+        </div>
+        <button class="combo-scroll-btn right">→</button>
+      </div>
+    </section>
+     <!-- CÁC MÓN CƠM VÀ SÚP -->
+        <section class="combo-section">
+      <h2>⭐ CÁC MÓN CƠM VÀ SÚP </h2>
+      <div class="combo-wrapper">
+        <button class="combo-scroll-btn left">←</button>
+        <div class="combo-list">
+          <div class="combo-card">
+            <a href=""><img src="/image/sup-com/comm1.jpg" alt="Combo 01"></a>
+            <div class="combo-info">
+              <h3>Cơm hoa sen</h3>
+              <p>1.470.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/sup-com/comm2.png" alt="Combo 02"></a> 
+            <div class="combo-info">
+              <h3>Cơm chiên dương châu  </h3>
+              <p>1.270.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/sup-com/sup1.jpg" alt="Combo 03"></a> 
+            <div class="combo-info">
+              <h3>Súp Hoàng Đen</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+            <div class="combo-card">
+           <a href=""><img src="/image/sup-com/sup2.jpg" alt="Combo 04"></a> 
+            <div class="combo-info">
+              <h3>Súp cua </h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+           <a href=""><img src="/image/sup-com/sup3.jpg" alt="Combo 05"></a> 
+            <div class="combo-info">
+              <h3>Súp thập cẩm </h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+          <div class="combo-card">
+            <a href=""><img src="/image/sup-com/sup4.jpg" alt="Combo 06"></a>
+            <div class="combo-info">
+              <h3>Súp tôm</h3>
+              <p>1.540.000 đ</p>
+            </div>
+          </div>
+
+        </div>
+        <button class="combo-scroll-btn right">→</button>
+      </div>
+    </section>
+      <div>
+      <img class="banner-header" src="/image/banner-middle2.jpg" alt="">
+    </div>
+  </main>
+  <div>
+    <img src="/image/banner-footer.jpg" alt="">
+  </div>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      
+      <!-- Cột 1: Thông tin liên hệ -->
+      <div class="footer-col">
+        <h4>THÔNG TIN LIÊN HỆ</h4>
+        <p><strong>CÔNG TY CỔ PHẦN THỨC ĂN BAY</strong></p>
+        <p>GPKD: 0314525625</p>
+        <p>Địa chỉ: 7/3 Hồ Biểu Chánh, P.11, Q. Phú Nhuận, TP.HCM</p>
+        <p>Điện thoại: (028) 39 911 911</p>
+        <p>Email: info@flyfood.vn</p>
+        <p>Website: https://flyfood.vn</p>
+      </div>
+
+      <!-- Cột 2: Giới thiệu -->
+      <div class="footer-col">
+        <h4>GIỚI THIỆU</h4>
+        <ul>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 3: Chính sách -->
+      <div class="footer-col">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Quy định chung</a></li>
+          <li><a href="#">Thanh toán</a></li>
+          <li><a href="#">Vận chuyển</a></li>
+          <li><a href="#">Đổi trả</a></li>
+          <li><a href="#">Bảo mật</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 4: Hỗ trợ -->
+      <div class="footer-col">
+        <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+        <ul>
+          <li><a href="#">Câu hỏi thường gặp</a></li>
+          <li><a href="#">Hướng dẫn đặt hàng</a></li>
+        </ul>
+        <form class="newsletter">
+          <input type="email" placeholder="Email của bạn...">
+          <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<script>
+document.querySelectorAll('.combo-card > a').forEach(a => {
+  a.href = 'product.html';
+});
+</script>
+<div class="floating-contact">
+  <a href="tel:02839911911" target="_blank" class="icon-phone" title="Gọi điện">
+    <img src="/image/icon-mxh/call.svg" alt="Gọi điện">
+  </a>
+  <a href="https://zalo.me/02839911911" target="_blank" class="icon-zalo" title="Zalo">
+    <img src="/image/icon-mxh/zalo.svg" alt="Zalo">
+  </a>
+  <a href="https://m.me/flyfood.vn" target="_blank" class="icon-messenger" title="Messenger">
+    <img src="/image/icon-mxh/messenger.svg" alt="Messenger">
+  </a>
+</div>
+</body>
+</html>

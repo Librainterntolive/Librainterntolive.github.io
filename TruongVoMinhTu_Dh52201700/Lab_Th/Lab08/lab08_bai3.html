@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="margin: 0 auto; border: 7px solid black; width: 50%;height: 100%;" >
+        <tr>
+            <td >  
+            <h1 style="text-align: center;">Thong Tin Nguoi Dung</h1>
+                <tr>
+                    <td style="border: 1px solid rgb(82, 82, 82);">        
+                        <div id="app">
+                            <div id="userInfo"></div>
+                        </div> 
+                    </td>
+                </tr>   
+            </td>
+        </tr>
+    </table>
+    
+    <script>
+        var userData={
+            "name":"Truong Vo Minh Tu",
+            "age":30,
+            "email":"TruongVoMinhTu@gmail.com",
+            "address":{
+                "city":"Ho Chi Minh",
+                "state":"Viet Nam",
+                "Zip":"77777",
+            }
+        }
+        function displayuserInfo(data){
+            var userInfoElement=document.getElementById('userInfo');
+            userInfoElement.innerHTML=`
+                <p><strong>Name: </strong>${data.name}</p>
+                <p><strong>Age: </strong> ${data.age} </p>
+                <p><strong>Email: </strong> ${data.email} </p>
+                <p><strong>Address: </strong> ${data.address.city} </p>
+            `
+        }
+        displayuserInfo(userData)
+    </script>
+</body>
+</html>

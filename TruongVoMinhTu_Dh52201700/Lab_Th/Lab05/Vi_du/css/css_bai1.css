@@ -1,0 +1,43 @@
+.menu {
+    background-color: aqua;
+    list-style: none;
+    min-height: 30px;
+    display: flex;
+    padding-left: 0%;
+}
+.menu li{
+    width: 100%;
+    line-height: 30px;
+    margin-left: 0px;
+    text-align: center;
+}
+.menu li a{
+    text-decoration: none;
+    display: block;
+}
+.menu li a:hover{
+    background-color: yellow;
+    color: blue;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.menu1 {
+    background-color: rgb(127, 170, 235);
+    color: black;
+    list-style: none;
+    padding: 0;
+    width: 250px;
+}
+.menu1 li{
+    line-height: 40px;
+    height: 40px;
+    border-bottom: solid;
+}
+.menu1 li a{
+    text-decoration: none;
+    display: block;
+}
+.menu1 li a:hover{
+    background-color: rgb(58, 142, 199);
+    font-style: italic;
+}

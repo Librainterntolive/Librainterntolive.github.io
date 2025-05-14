@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlyFood Clone - Tú Dev</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="btn_slide.js" defer></script>
+  <link rel="icon" type="image/png" href="image/Logo.png">
+
+</head>
+<body>
+  <!-- Header -->
+<header class="top-bar">
+  <div class="header-wrapper">
+    <!-- Cột logo + menu -->
+    <div class="logo-menu">
+      <a href="index.html"><img src="image/Logo.png" alt="FlyFood Logo" class="logo"></a> 
+      <button class="menu-btn">☰</button>
+    </div>
+
+    <!-- Thanh tìm kiếm -->
+    <div class="search-box">
+      <input type="text" placeholder="Tìm kiếm...">
+      <button class="search-icon">🔍</button>
+    </div>
+
+    <!-- Icon giỏ hàng, yêu thích, tài khoản -->
+    <div class="header-icons">
+      <span><a href="#"><i class="cart-icon">🛒</i></a></span>
+      <span><a href="#"><i class="user-icon">👤</i></a></span>
+    </div>
+  </div>
+</header>
+
+  <!-- Navigation -->
+<nav class="nav-links">
+  <div class="nav-container">
+    <a href="index.html" class="active">Trang chủ</a>
+    <div class="separator"></div>
+    <a href="info.html">Về Flyfood</a>
+    <div class="separator"></div>
+    <div class="dropdown">
+      <a href="#">Menu ▼</a>
+     <div class="dropdown-content">
+        <a href="product.html">Món được mua nhiều</a>
+        <a href="product.html">Các Món Gà</a>
+        <a href="product.html">Các Món Bò - Dê - Heo</a>
+        <a href="product.html">Các Món Khai Vị</a>
+        <a href="product.html">Các Món Súp - Cơm</a>
+        <a href="product.html">Các Món Lẩu</a>
+      </div>
+    </div>
+    <div class="separator"></div>
+    <a href="Labthuchanh.html"><span class="dot"></span>Lab Thực Hành</a>
+  
+    <div class="separator"></div>
+    <a href="blog.html">Tin tức</a>
+  </div>
+</nav>
+<main>
+  <div class="blog-banner">
+    <span class="blog-label">Mới nhất</span>
+    <h1>Vía Thần Tài - Khai Xuân Lộc Phát</h1>
+  </div>
+  <div class="blog-category-bar">
+    <span>Danh mục:</span>
+    <a href="blog.html" class="active">Tất cả</a>
+    <a href="blog.html">Tin Khuyến Mãi</a>
+    <a href="blog.html">Góc Tin Tức</a>
+    <a href="blog.html">Tin Tổng Hợp</a>
+    <a href="blog.html">Góc Ẩm Thực</a>
+    <a href="blog.html">Nói Về Tiệc Trọn Gói</a>
+    <a href="blog.html">Nói Về Tiệc SAS</a>
+    <a href="blog.html">Tuyển Dụng</a>
+    <input type="text" class="blog-search" placeholder="Tìm kiếm...">
+    <button class="blog-search-btn">🔍</button>
+  </div>
+  <div class="blog-list">
+    <!-- Bài viết 1 -->
+    <div class="blog-card">
+     <a href="product.html"><img src="/image/uathich/uathich-2.jpg" alt="Vía Thần Tài - Khai Xuân Lộc Phát"></a> 
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>Vía Thần Tài - Khai Xuân Lộc Phát</h3>
+        <p><b>RƯỚC VÍA THẦN TÀI - KHAI XUÂN LỘC PHÁT</b> Vào ngày vía Thần tài mùng 9 10 tháng giêng Âm lịch, tất cả mọi nhà, công ty, cửa hàng có thờ Thần Tài đều sắm sanh lễ vật để cúng vía, cầu xin một nă...</p>
+        <div class="blog-meta">
+          <span>31/01/2025 12:00:35</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+    <!-- Bài viết 2 -->
+    <div class="blog-card">
+     <a href="product.html"><img src="/image/lau/lau4.jpg" alt="Thưởng thức gà nướng Flyfood"></a> 
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>THƯỞNG THỨC GÀ NƯỚNG FLYFOOD - MÓN NGON QUEN THUỘC - BÙNG NỔ VỊ GIÁC</h3>
+        <p>🔥🍗 FLYFOOD tung bừng ra mắt món các món gà nướng cực kì thơm ngon, chất lượng 🍗🔥 Từ lâu, gà nướng đã trở thành một món ăn vô cùng quen thuộc và phổ biến đối với mọi người. Chúng ta có thể bắt gặp gà n...</p>
+        <div class="blog-meta">
+          <span>23/07/2024 03:23:49</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+    <!-- Bài viết 3 -->
+    <div class="blog-card">
+      <a href="product.html"><img src="/image/bo-de-heo/heo2.jpg" alt="Tôn vinh những người cha vĩ đại"></a>
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>TÔN VINH NHỮNG NGƯỜI CHA VĨ ĐẠI</h3>
+        <p>Ngày Của Cha: Tôn Vinh Những Người Cha Vĩ Đại Ngày của Cha, hay còn gọi là Father's Day, là một dịp đặc biệt để tôn vinh và tri ân những người cha trên toàn thế giới. Ngày này thường được tổ chức vào ...</p>
+        <div class="blog-meta">
+          <span>14/06/2024 05:16:08</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+      <!-- Bài viết 4 -->
+     <div class="blog-card">
+      <a href="product.html"><img src="/image/bo-de-heo/bo-de-heo1.jpg" alt="Tôn vinh những người cha vĩ đại"></a>
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>ĐÓN HÈ VỚI ƯU ĐÃI GÀ SIÊU "HOT" CÙNG FLYFOOD - THƯỞNG THỨC MÓN NGON TẬN NHÀ</h3>
+        <p>FLYFOOD - Thưởng thức trọn vẹn tinh hoa món gà ngay tại nhà cùng ưu đãi đầu tuần hấp dẫn! ...</p>
+        <div class="blog-meta">
+          <span>14/06/2024 05:16:08</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+       <!-- Bài viết 5 -->
+     <div class="blog-card">
+      <a href="product.html"><img src="/image/khaivi/khaivi-3.jpg" alt="Tôn vinh những người cha vĩ đại"></a>
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>TƯU ĐÃI SỐC!!! KHUYẾN MÃI TIỆC TRỌN GÓI TẬN NƠI - 5 BÀN TẶNG 1 BÀN</h3>
+        <p>Chào đón tháng 4, FLYFOOD gửi đến quý khách hàng chương trình khuyến mãi sốc khi đặt tiệc trọn gói tại FLYFOOD "5 BÀN TẶNG 1 BÀN"....</p>
+        <div class="blog-meta">
+          <span>14/06/2024 05:16:08</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+       <!-- Bài viết 6 -->
+     <div class="blog-card">
+      <a href="product.html"><img src="/image/sup-com/sup2.jpg" alt="Tôn vinh những người cha vĩ đại"></a>
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>GẤC - NÉT "CAM" TINH TẾ CỦA FLYFOOD</h3>
+        <p>- Gấc được xem là loại trái cây được nghiên cứu chứa rất nhiều chất dinh dưỡng, khoáng chất đặc biệt có tỉ lệ Vitamin C cao hơn gấp 40 lần so với trái cam....</p>
+        <div class="blog-meta">
+          <span>14/06/2024 05:16:08</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+       <!-- Bài viết 7 -->
+     <div class="blog-card">
+      <a href="product.html"><img src="/image/combo/combo-07.jpg" alt="Tôn vinh những người cha vĩ đại"></a>
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>GÀ NỔ MUỐI HỘT NỒI ĐẤT: TINH TÚY ĐẤT - RỪNG - BIỂN KẾT HỢP TRONG MÓN ĂN FLYFOOD</h3>
+        <p>Từ xa ngày xưa, Món ăn từ nồi đất và muối đã được ông cha ta dùng để làm chín món ăn, sự thấm đẫm mặn mà làm cho bữa cơm thật ngon và ăn thật nhiều cơm để cho sức thật nhiều và làm công việc thật có sức.
+Từ những gia vị rất bình thường như sả cây, lá chanh, rau răm… và quan trọng nhất là hột muối hạt thật mặn mà của hương biển đã làm cho món ăn thật sự toát ra sự nồng nàn của nó. ...</p>
+        <div class="blog-meta">
+          <span>14/06/2024 05:16:08</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+       <!-- Bài viết 8 -->
+     <div class="blog-card">
+      <a href="product.html"><img src="/image/Ga/ga-4.jpg" alt="Tôn vinh những người cha vĩ đại"></a>
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>TÔN VINH NHỮNG NGƯỜI CHA VĨ ĐẠI</h3>
+        <p>Ngày Của Cha: Tôn Vinh Những Người Cha Vĩ Đại Ngày của Cha, hay còn gọi là Father's Day, là một dịp đặc biệt để tôn vinh và tri ân những người cha trên toàn thế giới. Ngày này thường được tổ chức vào ...</p>
+        <div class="blog-meta">
+          <span>14/06/2024 05:16:08</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+       <!-- Bài viết 9 -->
+     <div class="blog-card">
+      <a href="product.html"><img src="/image/uathich/uathich-5.jpg" alt="Tôn vinh những người cha vĩ đại"></a>
+      <div class="blog-card-content">
+        <span class="blog-admin">Administrator</span>
+        <h3>FLYFOOD RA MẮT CÁC MÓN DÊ MỚI - ƯU ĐÃI CỰC SỐC GIẢM 25% !!!</h3>
+        <p>📣📣📣FLYFOOD tưng bừng ra mắt món mới, nhận ngay ưu đãi cực hời!!!📣📣📣
+
+FLYFOOD - thương hiệu ẩm thực nổi tiếng Việt Nam, vừa cho ra mắt các MÓN DÊ mới mang đến nhiều trải nghiệm ẩm thực độc đáo hơn cho quý khách hàng....</p>
+        <div class="blog-meta">
+          <span>14/06/2024 05:16:08</span>
+          <span>• Góc Tin Tức</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      
+      <!-- Cột 1: Thông tin liên hệ -->
+      <div class="footer-col">
+        <h4>THÔNG TIN LIÊN HỆ</h4>
+        <p><strong>CÔNG TY CỔ PHẦN THỨC ĂN BAY</strong></p>
+        <p>GPKD: 0314525625</p>
+        <p>Địa chỉ: 7/3 Hồ Biểu Chánh, P.11, Q. Phú Nhuận, TP.HCM</p>
+        <p>Điện thoại: (028) 39 911 911</p>
+        <p>Email: info@flyfood.vn</p>
+        <p>Website: https://flyfood.vn</p>
+      </div>
+
+      <!-- Cột 2: Giới thiệu -->
+      <div class="footer-col">
+        <h4>GIỚI THIỆU</h4>
+        <ul>
+          <li><a href="#">Về chúng tôi</a></li>
+          <li><a href="#">Tuyển dụng</a></li>
+          <li><a href="#">Liên hệ</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 3: Chính sách -->
+      <div class="footer-col">
+        <h4>CHÍNH SÁCH</h4>
+        <ul>
+          <li><a href="#">Quy định chung</a></li>
+          <li><a href="#">Thanh toán</a></li>
+          <li><a href="#">Vận chuyển</a></li>
+          <li><a href="#">Đổi trả</a></li>
+          <li><a href="#">Bảo mật</a></li>
+        </ul>
+      </div>
+
+      <!-- Cột 4: Hỗ trợ -->
+      <div class="footer-col">
+        <h4>HỖ TRỢ KHÁCH HÀNG</h4>
+        <ul>
+          <li><a href="#">Câu hỏi thường gặp</a></li>
+          <li><a href="#">Hướng dẫn đặt hàng</a></li>
+        </ul>
+        <form class="newsletter">
+          <input type="email" placeholder="Email của bạn...">
+          <button type="submit">Đăng ký</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="floating-contact">
+  <a href="tel:02839911911" target="_blank" class="icon-phone" title="Gọi điện">
+    <img src="/image/icon-mxh/call.svg" alt="Gọi điện">
+  </a>
+  <a href="https://zalo.me/02839911911" target="_blank" class="icon-zalo" title="Zalo">
+    <img src="/image/icon-mxh/zalo.svg" alt="Zalo">
+  </a>
+  <a href="https://m.me/flyfood.vn" target="_blank" class="icon-messenger" title="Messenger">
+    <img src="/image/icon-mxh/messenger.svg" alt="Messenger">
+  </a>
+</div>
+</body>
+</html>
