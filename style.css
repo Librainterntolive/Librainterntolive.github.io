@@ -1400,5 +1400,13 @@ body {
   font-size: 1rem;
   letter-spacing: 1px;
 }
-
+.banner-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin: 0 auto;
+  padding: 0;
+}
 
