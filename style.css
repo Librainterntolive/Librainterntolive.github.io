@@ -1,9 +1,10 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   max-width: 100vw;
   overflow-x: hidden;
+  background: #fff;
 }
 
 /* Đặt header wrapper ở giữa và chia 3 phần */
@@ -653,16 +654,83 @@ body {
   }
 }
 
-@media (max-width: 480px) {
-  .combo-card {
-    width: 100%;
-    min-width: 120px;
-    max-width: 100vw;
-  }
+/* Đảm bảo body không bị margin/padding dư */
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #fff;
+}
+
+/* Các thành phần full-width luôn sát mép */
+.student-footer,
+.banner-footer,
+.banner-header,
+.footer,
+.nav-links,
+.main-content,
+.combo-wrapper {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box;
+}
+
+/* Đảm bảo ảnh banner tràn viền */
+.banner-footer img,
+.banner-header img {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Footer grid full width trên mobile */
+@media (max-width: 600px) {
   .footer .footer-grid {
     grid-template-columns: 1fr;
     gap: 16px;
+    padding-left: 0;
+    padding-right: 0;
   }
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+}
+
+/* Combo wrapper và main content full width trên mobile */
+@media (max-width: 600px) {
+  .combo-wrapper,
+  .main-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+}
+
+/* Loại bỏ padding/margin dư cho các section chính */
+@media (max-width: 600px) {
+  .banner-footer,
+  .banner-header,
+  .student-footer {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+/* Đảm bảo không có khoảng trắng ngang khi cuộn */
+html, body {
+  overflow-x: hidden !important;
 }
 
 .main-container {
@@ -1393,12 +1461,17 @@ body {
   }
 }
 .student-footer {
+  width: 100vw;
+  left: 0;
+  margin: 0;
   background: #222;
   color: #fff;
   text-align: center;
-  padding: 10px 0;
+  padding: 12px 0;
   font-size: 1rem;
   letter-spacing: 1px;
+  position: relative;
+  box-sizing: border-box;
 }
 .banner-footer {
   width: 100%;
