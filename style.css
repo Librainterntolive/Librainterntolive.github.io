@@ -1408,5 +1408,37 @@ body {
   background: transparent;
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
 }
+
+.banner-footer img {
+  display: block;
+  max-width: 1200px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .banner-footer img {
+    max-width: 98vw;
+    border-radius: 8px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .banner-footer {
+    padding: 0 2vw;
+  }
+  .banner-footer img {
+    max-width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
 
