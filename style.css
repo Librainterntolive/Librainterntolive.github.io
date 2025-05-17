@@ -1548,10 +1548,5 @@ html, body {
 /* Đảm bảo dropdown hiển thị trên mọi thiết bị */
 .dropdown-content {
   box-sizing: border-box;
-  z-index: 1001;
-}
-@media (max-width: 600px) {
-  .dropdown:hover .dropdown-content {
-    display: none !important;
-  }
+  z-index: 1000;
 }
